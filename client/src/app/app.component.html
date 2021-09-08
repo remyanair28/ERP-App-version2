@@ -1,0 +1,48 @@
+<!-- {{currentPath}} -->
+<!-- <div *ngIf="currentPath!='/home'; else homeblock">
+<mat-toolbar color="primary" *ngIf="isLoggedIn$ | async as isLoggedIn ">
+  <mat-toolbar-row *ngIf = "isLoggedIn$ | async as isLoggedIn" > -->
+    <!-- <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button> -->
+    <!-- <h1>Employee Management Application</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a *ngIf="authService.currentuser===null; else elseBlock" mat-button routerLink="/login"> Login</a>
+      <ng-template #elseBlock><a mat-button (click)="logout()"> Logout</a>Welcome {{authService.currentuser.firstname}} </ng-template>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-drawer-container class="example-container">
+  <mat-drawer *ngIf="authService.currentuser!==null" mode="side" opened>
+    <mat-nav-list>
+      <a *ngIf="authService.currentuser.role==0" mat-list-item routerLink="/employeelist"> Lists of Employees </a>
+      <a *ngIf="authService.currentuser.role==0" mat-list-item routerLink="/userlist"> Lists of Users </a>
+      <a mat-list-item routerLink="/eventslist"> Lists of Events </a>
+    </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content> 
+    <div style="height: 100%;">
+      <router-outlet></router-outlet>
+    </div>
+</mat-drawer-content>
+</mat-drawer-container> -->
+<!-- <mat-sidenav-container>
+  <mat-sidenav>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/employeelist"> Lists of Employees </a>
+      <a mat-list-item routerLink="/userlist"> Lists of Users </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height: 88vh;">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
+<!-- </div>
+<ng-template #homeblock> -->
+  <!-- $event carries our child variable -->
+  <!-- <app-home (notify)="checkClicked($event)"></app-home>
+</ng-template> -->
+<router-outlet></router-outlet>
