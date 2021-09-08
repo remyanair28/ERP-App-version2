@@ -1,0 +1,23 @@
+/* .image {
+
+    overflow-x:hidden;
+    overflow-y:hidden;
+} */
+
+/* .container-fluid { */
+    /* background-color:#fff0d1ff ; */
+    /* background-color: white; */
+/* } */
+
+/* .main { */
+    /* background-color:#fff0d1ff ; */
+    /* background-color: white; */
+/* } */
+
+
+.img {
+    -webkit-filter: blur(0.5px); /* Safari 6.0 - 9.0 */
+    filter: blur(0.5px);
+    -webkit-filter: grayscale(20%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(20%);
+  }
